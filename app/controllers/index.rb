@@ -1,4 +1,6 @@
 get '/' do
-  # Look in app/views/index.erb
+  #Run some ruby method that populates a list
+  @populate = Category.populate
+
   erb :index
 end
