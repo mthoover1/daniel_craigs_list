@@ -6,8 +6,8 @@
   <h2>categories</h2>
 
   <ul id="main-categories">
-    <% @populate.map do |name| %>
-    <li><%= name %></li>
+    <% @categories.map do |category| %>
+    <li><a href='/<%= category.id %>'><%= category.name %></a></li>
     <% end %>
   </ul>
  

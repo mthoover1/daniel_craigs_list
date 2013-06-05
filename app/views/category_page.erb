@@ -1,0 +1,15 @@
+<div id="title">
+  <h1>danielcraigslist</h1>
+</div>
+
+<div class="container">
+  <h2><%= @category.name %></h2><br>
+  <h3>posts</h3>
+
+  <ul id="posts">
+    <% @posts.map do |post| %>
+      <li><a href='/<%=@category.id%>/<%= post.id%>'><%= post.title %></a></li>
+    <% end %>
+  </ul>
+ 
+</div>
