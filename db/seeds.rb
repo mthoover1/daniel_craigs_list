@@ -6,9 +6,16 @@ Category.delete_all
 
 categories = []
 
-10.times do
-  categories << Category.create!(name: Faker::Lorem.sentence(word_count = 3, supplemental = false))
-end
+categories << Category.create!(name: "men's swimsuits")
+categories << Category.create!(name: "men's speedos")
+categories << Category.create!(name: "used bond dvd's")
+categories << Category.create!(name: "protein shakes")
+categories << Category.create!(name: "range rovers")
+categories << Category.create!(name: "daniel craig posters")
+categories << Category.create!(name: "daniel craig memorabilia")
+categories << Category.create!(name: "slimfast")
+categories << Category.create!(name: "maps to daniel craig's home")
+
 
 def price
   dollars = rand(501)

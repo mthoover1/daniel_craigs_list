@@ -10,10 +10,25 @@ h1 {
   font-size: 44px;
 }
 
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+
 h2 {
   font-family: serif;
   color: dodgerblue;
   font-size: 30px;
+}
+
+.ad {
+  width: 400px;
+}
+
+.ads {
+  display: inline-block;
+  float: right;
+  position: absolute;
 }
 
 #title {
@@ -30,6 +45,7 @@ h2 {
   padding: 0px 20px 20px 20px;
   background-color: white;
   margin-left: 300px;
+  display: inline-block;
 }
 
 th {
