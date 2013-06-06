@@ -73,3 +73,23 @@ a {
   color: dodgerblue;
 }
 
+#hide {
+  visibility: hidden;
+  color: transparent;
+}
+
+#posts li {
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: dodgerblue;
+  color: white;
+  box-shadow: 2px 2px darkgray;
+}
+
+.pop {
+  color: dodgerblue;
+}

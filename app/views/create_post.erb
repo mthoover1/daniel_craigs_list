@@ -3,19 +3,19 @@
 </div>
 
 <div class="container">
-  <h2><%= @category.name %></h2><br>
-  <form action="/<%=@category.id%>/create" method="get">
-  <input class="button" type="submit" value="create post">
+  <h2>create post in <%=@category.name%></h2><br>
+
+  <form action="/:id/create" method='post'>
+    <input class="pop" type="text" name="title" value="title">
+    <br>
+    <textarea class="pop" rows="4" cols="50" name="description">description</textarea>
+    <input class="pop" type="text" name="price" value="price">
+    <br>
+    <input class="pop" type="text" name="email" value="email">
+    <br><br>
+    <input class="button" type="submit" value="create new post">
+    <input type="text" id="hide" name="category_id" value="<%=@category.id%>">
   </form>
-
-  <h3>posts</h3>
-
-  <ul id="posts">
-    <% @posts.map do |post| %>
-      <li><a href='/<%=@category.id%>/<%= post.id%>'><%= post.title %></a></li>
-    <% end %>
-  </ul>
- 
 </div>
 
 <div class="ads">
